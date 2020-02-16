@@ -14,7 +14,7 @@ jobs:
             - name: Setup JFrog CLI
               uses: ./
               env:
-                  JF_ARTIFACTORY_LOCAL: eyJ2ZXJzaW9uIjoxLCJ1cmwiOiJodHRwOi8vMTI3LjAuMC4xOjgwODEvYXJ0aWZhY3RvcnkvIiwidXNlciI6ImFkbWluIiwicGFzc3dvcmQiOiJBUEI3REVaUlBpSHFIRFRRb2tMa3g5aGh6S1QiLCJzZXJ2ZXJJZCI6ImxvY2FsIn0=
+                  JF_ARTIFACTORY_LOCAL: eyJ2ZXJzaW9uIjoxLCJ1cmwiOiJodHRwczovL2JhdGVsdC5qZnJvZy5pby9iYXRlbHQvIiwidXNlciI6ImFkbWluIiwicGFzc3dvcmQiOiJBUDQxSEhZNlBTNUJFZWZQMlk3NDFWaTlqaHciLCJzZXJ2ZXJJZCI6ImFvbCJ9
             - name: Sanity # Check that the correct CLI downloaded and local server successfully configured
               run: jfrog rt c show local
             - name: Check build URL
